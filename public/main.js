@@ -13,8 +13,8 @@ function postMessage() {
 	var img = $('#image').val();
 	$('#image').val("");
 	var image =$('<img>').addClass('profile').attr('src', img);
-	var postIt = $('<div>').addClass('newestPost animated tada').insertAfter('.newPost');
-	$(postIt).append(post).addClass('post glyphicon glyphicon-heart').append(image);
+	var postIt = $('<div>').addClass('newestPost animated tada well').insertAfter('.newPost');
+	$(postIt).append(image).append(post).addClass('post glyphicon glyphicon-heart');
 	$('.newestPost').prepend(postIt);
 
 }
