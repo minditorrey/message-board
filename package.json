@@ -1,0 +1,22 @@
+{
+  "name": "message-board",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "jade": "^1.11.0",
+    "moment": "^2.13.0",
+    "node-static": "^0.7.7",
+    "qs": "^6.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": "5.10.1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

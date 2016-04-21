@@ -1,0 +1,35 @@
+extends ./layout.jade
+	
+block content
+	.header
+		h1.mess.animated.rubberBand Messages
+		.heart
+			span.glyphicon.glyphicon-heart.heartTwo
+			p.connect Connect with friends
+	button.post-it.btn.btn-lg(data-toggle='modal', data-target='#basicModal') Create Awesome Message
+	.modal.fade(tabindex='-1', role='dialog', id='basicModal')
+		.modal-dialog
+			.modal-content
+				.modal-header
+					button.close(type='button', data-dismiss='modal')
+					h4.modal-title Leave an awesome message here...
+				.modal-body
+					input#myMessage.form-control(type='text', placeholder='message',)
+					label(for='image') Image Link
+					input#image.form-control.clear(type='text', placeholder='image url', required='required')
+				.modal-footer
+					button.btn.btn-default(type='button', data-dismiss='modal') Close
+					button.btn.btn-primary.postMess(type='button') Post it!
+	script (type='text/javascript')
+		//- console.log(messages);
+	div.messagePosts.well
+		div.newPost
+		each val in messages
+			img(src=val.image, class="thumbnail")
+			h2= val.message
+			p= date
+		
+
+
+
+

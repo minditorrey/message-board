@@ -1,0 +1,117 @@
+.header {
+	color: white;
+	margin-left: 5%;
+
+}
+
+h1 {
+	font-weight: bold;
+	font-size: 76px;
+	margin-left: 10%;
+	margin-top: 5%;
+}
+
+.post-it {
+	margin-left: 15%;
+	margin-top: 1%;
+	background-color: #3db6d1;
+}
+
+span {
+	font-size: 128px;
+	float: right;
+	margin-top: 4%;
+	margin-right: 32%;
+	color: #3db6d1;
+}
+
+.heartTwo {
+	margin-right: 50%;
+	margin-top: -9%;
+}
+
+.connect {
+	color: #3db6d1;
+	margin-left: 50%;
+	
+	font-size: 20px;
+}
+
+a {
+	font-size: 26px;
+	float: right;
+	color: #3db6d1;
+	font-weight: bold;
+
+}
+
+body {
+	background-color: #FFA81E;
+	color: white;
+}
+
+.friends {
+	margin-top: 5%;
+	margin: bottom: 5%;
+
+}
+
+.modal-title {
+	color: black;
+}
+
+.modal-fade {
+	color: #3db6d1;
+}
+
+.messagePosts {
+	margin-top: 5%;
+	margin-left: 15%;
+	font-size: 18px;
+	font-weight: bold;
+	margin-right: 15%;
+	box-shadow: 3px 3px 3px gray;
+	color: #3db6d1;
+}
+
+.newPost {
+	margin-top: 2%;
+	font-size: 18px;
+}
+
+.thumbnail {
+	min-height: 150px;
+	min-width: 150px;
+	border: 2px solid black;
+
+}
+
+h3 {
+	font-size: 16px;
+}
+
+h2 {
+	margin-top: -5%;
+	margin-left: 300px;
+	font-size: 20px;
+}
+
+.profile {
+	float: right;
+	border: 2px solid black;
+	margin-left: 16px;
+
+}
+
+.newestPost {
+	
+	font-size: 20px;
+	font-weight: bold;
+
+
+}
+
+.hidden {
+
+}
+
