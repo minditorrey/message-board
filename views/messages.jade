@@ -1,11 +1,16 @@
 extends ./layout.jade
 	
 block content
-	.header
-		h1.mess.animated.rubberBand Messages
-		.heart
-			span.glyphicon.glyphicon-heart.heartTwo
-			p.connect Connect with friends
+	.row
+		.col-md-8
+			h1.main Message Board App
+		.col-md-4
+			.heart
+				span.glyphicon.glyphicon-heart
+				p.connect Connect with friends
+	.well.tina
+		img(src="https://img.buzzfeed.com/buzzfeed-static/static/2014-06/28/12/campaign_images/webdr10/22-life-lessons-from-tina-belcher-2-8641-1403972398-0_big.jpg", class="tinaPic", alt="Tina Belcher")
+		p Make my heart poop its pants.
 	button.post-it.btn.btn-lg(data-toggle='modal', data-target='#basicModal') Create Awesome Message
 	.modal.fade(tabindex='-1', role='dialog', id='basicModal')
 		.modal-dialog
@@ -22,12 +27,20 @@ block content
 					button.btn.btn-primary.postMess(type='button') Post it!
 	script (type='text/javascript')
 		//- console.log(messages);
-	div.messagePosts.well
-		div.newPost
-		each val in messages
-			img(src=val.image, class="thumbnail")
-			h2= val.message
-			p.date= date
+	.messagePosts.well
+		.newPost.show
+			img.thumbnail(src='')
+			h2 
+			p.date
+			button(class='btn btn-md edit', type='button', ,='', data-dismiss='modal') Edit
+			button(class='btn btn-md remove', type='button', ,='', data-dismiss='modal') Delete	
+
+
+
+		//- each val in messages
+		//- 	img(src=val.image, class="thumbnail")
+		//- 	h2= val.message
+		//- 	p.date= date
 		
 
 

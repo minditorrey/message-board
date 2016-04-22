@@ -1,11 +1,14 @@
 extends ./layout.jade
 
 block content
-	.header
-		h1.main Message Board App
-		.heart
-			span.glyphicon.glyphicon-heart
-			a(href='/messages') Connect with friends
-		img(src="//favim.com/orig/201108/13/bampw-black-and-white-city-friends-fur-Favim.com-122401.jpg", width="100%", height="70%" alt="three friends", class="friends")
+	.row
+		.col-md-8
+			h1.main Message Board App
+		.col-md-4
+			.heart
+				span.glyphicon.glyphicon-heart
+				a(href='/messages') Connect with friends
+		.col-md-12
+			img(src="//favim.com/orig/201108/13/bampw-black-and-white-city-friends-fur-Favim.com-122401.jpg", width="100%", height="70%" alt="three friends", class="friends")
 
 			
