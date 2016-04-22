@@ -28,8 +28,6 @@ app.route('/')
 		res.render('index', {
 			title: 'Message Board App'
 		});
-
-
 		});
 	
 

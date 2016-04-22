@@ -15,7 +15,8 @@ exports.findAll = function(callback) {
 			return;
 		}
 		try {
-		var posts = JSON.parse(data);	
+		var posts = JSON.parse(data);
+		console.log(posts);	
 		} catch(err){
 			return callback(err);
 		}
@@ -31,9 +32,10 @@ exports.create = function(post, cb) {
 		}
 		var newPost = {
 			post: post.post,
-			image: post.url,
+			image: post.image,
 			id: uuid()
 		};
+		console.log(newPost);
 	posts.push(newPost);
 	fs.writeFile(dataFile, JSON.stringify(posts), err => {
 		cb(err);
