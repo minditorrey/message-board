@@ -21,19 +21,20 @@ block content
 				.modal-body
 					input#myMessage.form-control(type='text', placeholder='message',)
 					label(for='image') Image Link
-					input#image.form-control.clear(type='text', placeholder='image url', required='required')
+					input#image.form-control(type='text', placeholder='image url', required='required')
+					input#name.form-control(type='text', placeholder='name', required='required')
 				.modal-footer
 					button.btn.btn-default(type='button', data-dismiss='modal') Close
 					button.btn.btn-primary.postMess(type='button') Post it!
 	script (type='text/javascript')
 		//- console.log(messages);
 	.messagePosts.well
-		.newPost.show
+		.newestPost.well.show
 			img.thumbnail(src='')
 			h2 
 			p.date
-			button(class='btn btn-md edit', type='button', ,='', data-dismiss='modal') Edit
-			button(class='btn btn-md remove', type='button', ,='', data-dismiss='modal') Delete	
+			//- button(class='btn btn-md edit', type='button', ,='', data-dismiss='modal') Edit
+			//- button(class='btn btn-md remove', type='button', ,='', data-dismiss='modal') Delete	
 
 
 

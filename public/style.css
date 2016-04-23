@@ -5,10 +5,14 @@ h1 {
 	margin-top: 5%;
 }
 
-.post-it {
-	margin-left: 15%;
-	margin-top: 6%;
-	background-color: #3db6d1;
+.edit {
+	margin-top: 14%;
+	
+}
+
+.remove {
+	margin-top: 18%;
+	
 }
 
 span {
@@ -30,9 +34,13 @@ span {
 	margin-right: 45%;
 	font-weight: bold;
 	font-size: 24px;
-	margin-top: 3%;
+	margin-top: 3%;	
+}
 
-	
+.post-it {
+	margin-left: 15%;
+	margin-top: 6%;
+	background-color: #3db6d1;
 }
 
 a {
@@ -54,7 +62,9 @@ a {
 	margin-left: 15%;
 	margin-right: 15%;
 	margin-top: 3%;
+	box-shadow: 3px 3px 2px gray;
 }
+
 
 p {
 	color: #3db6d1;
@@ -85,6 +95,10 @@ body {
 	color: #3db6d1;
 }
 
+.postIt {
+
+}
+
 .messagePosts {
 	margin-top: 2%;
 	margin-left: 15%;
@@ -96,15 +110,30 @@ body {
 	color: #3db6d1;
 }
 
-.newPost {
-	margin-top: 3%;
-	font-size: 18px;
+.newName {
+	color: color: #3db6d1;
+	font-size: 20px;
+}
+.newestPost {
+	font-size: 20px;
+	font-weight: bold;
+	width: 100%;
+	
+}
+
+.post {
+	color: #3db6d1;
+	margin-top: 6%;
+}
+
+.name {
+	margin-left: 1%;
 }
 
 .thumbnail {
 	max-height: 150px;
 	max-width: 150px;
-	border: 2px solid #3db6d1;;
+	border: 2px solid #3db6d1;
 
 }
 
@@ -118,6 +147,7 @@ h2 {
 	font-size: 20px;
 }
 
+
 .profile {
 	float: left;
 	border: 2px solid #3db6d1;;
@@ -127,16 +157,6 @@ h2 {
 	margin-right: 100px;
 }
 
-.newestPost {
-	margin-bottom: 12px;
-	font-size: 20px;
-	font-weight: bold;
-	width: 100%;
-}
-
-.newPost {
-	display: none;
-}
 
 .date {
 	font-size: 12px;
